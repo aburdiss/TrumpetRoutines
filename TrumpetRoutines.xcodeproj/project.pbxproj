@@ -15,6 +15,12 @@
 		9C50325D246DF32200982106 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C50325B246DF32200982106 /* LaunchScreen.storyboard */; };
 		9C503268246DF32200982106 /* TrumpetRoutinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503267246DF32200982106 /* TrumpetRoutinesTests.swift */; };
 		9C503273246DF32200982106 /* TrumpetRoutinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503272246DF32200982106 /* TrumpetRoutinesUITests.swift */; };
+		9C503281246E054B00982106 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503280246E054B00982106 /* MainView.swift */; };
+		9C503283246E059000982106 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503282246E059000982106 /* RoutineView.swift */; };
+		9C503285246E05B600982106 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503284246E05B600982106 /* ListView.swift */; };
+		9C503287246E05E000982106 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503286246E05E000982106 /* ExerciseDetailView.swift */; };
+		9C503289246E05FF00982106 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503288246E05FF00982106 /* SettingsView.swift */; };
+		9C50328B246E061A00982106 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50328A246E061A00982106 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		9C50326E246DF32200982106 /* TrumpetRoutinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrumpetRoutinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C503272246DF32200982106 /* TrumpetRoutinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpetRoutinesUITests.swift; sourceTree = "<group>"; };
 		9C503274246DF32200982106 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C503280246E054B00982106 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9C503282246E059000982106 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		9C503284246E05B600982106 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9C503286246E05E000982106 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
+		9C503288246E05FF00982106 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9C50328A246E061A00982106 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,12 @@
 				9C503250246DF32000982106 /* AppDelegate.swift */,
 				9C503252246DF32000982106 /* SceneDelegate.swift */,
 				9C503254246DF32000982106 /* ContentView.swift */,
+				9C503280246E054B00982106 /* MainView.swift */,
+				9C503282246E059000982106 /* RoutineView.swift */,
+				9C503284246E05B600982106 /* ListView.swift */,
+				9C503286246E05E000982106 /* ExerciseDetailView.swift */,
+				9C503288246E05FF00982106 /* SettingsView.swift */,
+				9C50328A246E061A00982106 /* Model.swift */,
 				9C503256246DF32200982106 /* Assets.xcassets */,
 				9C50325B246DF32200982106 /* LaunchScreen.storyboard */,
 				9C50325E246DF32200982106 /* Info.plist */,
@@ -267,7 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C50328B246E061A00982106 /* Model.swift in Sources */,
+				9C503287246E05E000982106 /* ExerciseDetailView.swift in Sources */,
+				9C503289246E05FF00982106 /* SettingsView.swift in Sources */,
 				9C503251246DF32000982106 /* AppDelegate.swift in Sources */,
+				9C503281246E054B00982106 /* MainView.swift in Sources */,
+				9C503285246E05B600982106 /* ListView.swift in Sources */,
+				9C503283246E059000982106 /* RoutineView.swift in Sources */,
 				9C503253246DF32000982106 /* SceneDelegate.swift in Sources */,
 				9C503255246DF32000982106 /* ContentView.swift in Sources */,
 			);
