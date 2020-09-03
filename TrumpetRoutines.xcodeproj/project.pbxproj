@@ -21,6 +21,7 @@
 		9C503287246E05E000982106 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503286246E05E000982106 /* ExerciseDetailView.swift */; };
 		9C503289246E05FF00982106 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503288246E05FF00982106 /* SettingsView.swift */; };
 		9C50328B246E061A00982106 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50328A246E061A00982106 /* Model.swift */; };
+		DD88A0E12500374600978B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD88A0E32500374600978B84 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,10 @@
 		9C503286246E05E000982106 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		9C503288246E05FF00982106 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9C50328A246E061A00982106 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DD88A0E22500374600978B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD88A0E42500375400978B84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD88A0E52500375B00978B84 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DD88A0E62500376400978B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 		9C503244246DF32000982106 = {
 			isa = PBXGroup;
 			children = (
+				DD88A0E32500374600978B84 /* Localizable.strings */,
 				9C50324F246DF32000982106 /* TrumpetRoutines */,
 				9C503266246DF32200982106 /* TrumpetRoutinesTests */,
 				9C503271246DF32200982106 /* TrumpetRoutinesUITests */,
@@ -240,6 +246,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"es-419",
+				fr,
 			);
 			mainGroup = 9C503244246DF32000982106;
 			productRefGroup = 9C50324E246DF32000982106 /* Products */;
@@ -259,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C50325D246DF32200982106 /* LaunchScreen.storyboard in Resources */,
+				DD88A0E12500374600978B84 /* Localizable.strings in Resources */,
 				9C50325A246DF32200982106 /* Preview Assets.xcassets in Resources */,
 				9C503257246DF32200982106 /* Assets.xcassets in Resources */,
 			);
@@ -337,6 +347,17 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DD88A0E32500374600978B84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD88A0E22500374600978B84 /* en */,
+				DD88A0E42500375400978B84 /* zh-Hans */,
+				DD88A0E52500375B00978B84 /* es-419 */,
+				DD88A0E62500376400978B84 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -344,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -404,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -459,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -467,6 +491,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -479,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -487,6 +513,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

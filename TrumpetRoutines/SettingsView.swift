@@ -9,8 +9,24 @@
 import SwiftUI
 
 struct SettingsView: View {
+    /**
+     The user selected preferences.
+     */
     @EnvironmentObject var settings: settingsModel
     
+    /**
+     The user selected Favorites
+     */
+    @EnvironmentObject var favorites: Favorites
+    
+    /**
+     State variable that determines whether the resettingFavorites Alert Sheet will show.
+     */
+    @State private var resettingFavoritesAlert = false
+    
+    /**
+     The user interface
+     */
     var body: some View {
         NavigationView {
             VStack {
@@ -29,10 +45,10 @@ struct SettingsView: View {
                             Text("Single Note Articulation")
                         }
                         Toggle(isOn: $settings.variableArticulationToggle) {
-                            Text("Changing Note Articulation")
+                            Text("Moving Note Articulation")
                         }
                         Toggle(isOn: $settings.majorScalesToggle) {
-                            Text("Major Scales")
+                            Text("Scales")
                         }
                         Toggle(isOn: $settings.highRangeToggle) {
                             Text("High Range")
@@ -45,17 +61,64 @@ struct SettingsView: View {
                     Section(header: Text("Routine Length")) {
                         Picker(selection: $settings.selectedDifficulty, label:Text("Routine Length")) {
                             ForEach(0 ..< 3) {
-                                Text(self.settings.difficulties[$0])
+                                Text(NSLocalizedString(self.settings.difficulties[$0], comment: ""))
                             }
                         }
                     .pickerStyle(SegmentedPickerStyle())
                     }
+                    Section(header: Text("Favorites")) {
+                        Button(action: {
+                            self.resettingFavoritesAlert = true
+                        }) {
+                            HStack {
+                                Text("Reset Favorites")
+                                Image(systemName: "heart.slash")
+                            }
+                        }
+                        .alert(isPresented: $resettingFavoritesAlert) {
+                            Alert(title: Text("All favorites will be removed"), message: Text("This cannot be undone!"), primaryButton: .destructive(Text("Reset")) {
+                                self.resetFavorites()
+                            }, secondaryButton: .cancel())
+                        }
+                    }
                     Section(header: Text("Resources")) {
+                        Button(action: {
+                            let url = URL(string: "https://apps.apple.com/us/app/tptxcerpts/id1524993991")!
+                            UIApplication.shared.open(url)
+                        }) {
+                            HStack {
+                                Image("TptXcerptsIcon")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 29, height: 29)
+                                .mask(RoundedRectangle(cornerRadius: 7.0))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 7.0)
+                                        .stroke(Color.gray, lineWidth: 0.3)
+                                )
+                                Text("Download TptXcerpts")
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                            }
+                        }
                         Button(action: {
                             let url = URL(string: "https://apps.apple.com/us/app/scale-practice-randomizer/id1496727056")!
                             UIApplication.shared.open(url)
                         }) {
-                            Text("Download Scale Practice - Randomizer")
+                            HStack {
+                                Image("ScalePracticeIcon")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 29, height: 29)
+                                .mask(RoundedRectangle(cornerRadius: 7.0))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 7.0)
+                                        .stroke(Color.gray, lineWidth: 0.3)
+                                )
+                                Text("Download Scale Practice - Randomizer")
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                            }
                         }
                         Button(action: {
                             let url = URL(string: "http://www.arsnovapublishing.com")!
@@ -71,7 +134,7 @@ struct SettingsView: View {
                         }
                     }
                     Section(header: Text("About")) {
-                        Text("©2020 Alexander Burdiss")
+                        Text("© 2020 Alexander Burdiss")
                         Button(action: {
                             let url = URL(string: "mailto:aburdiss@gmail.com")!
                             UIApplication.shared.open(url)
@@ -82,10 +145,16 @@ struct SettingsView: View {
                 }
                 .listStyle(GroupedListStyle())
             }
-            .environmentObject(settings)
             .navigationBarTitle("Settings")
         }
-    .navigationViewStyle(StackNavigationViewStyle())
+        .navigationViewStyle(StackNavigationViewStyle())
+    }
+    
+    /**
+     Removes all favorites from the favorites model.
+     */
+    func resetFavorites() {
+        self.favorites.removeAll()
     }
 }
 

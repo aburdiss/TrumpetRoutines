@@ -25,14 +25,11 @@ struct MainView: View {
                     .overlay(RoundedRectangle(cornerRadius: 12)
                         .stroke(Color.yellow, lineWidth: 2))
                     .padding()
-                    
                 }
-                
             }
-            
             .navigationBarTitle("Trumpet Routines")
         }
-    .navigationViewStyle(StackNavigationViewStyle())
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

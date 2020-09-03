@@ -11,8 +11,9 @@ import SwiftUI
 struct ListView: View {
     @EnvironmentObject var favorites: Favorites
     
-    @State private var resettingFavoritesAlert = false
-    
+    /**
+     The user interface
+     */
     var body: some View {
         NavigationView {
             List {
@@ -662,23 +663,8 @@ struct ListView: View {
             }
             .listStyle(GroupedListStyle())
             .navigationBarTitle("All Exercises")
-            .navigationBarItems(trailing: Button(action: {
-                self.resettingFavoritesAlert = true
-            }) {
-                Text("Reset")
-                Image(systemName: "heart.slash")
-            }
-            .alert(isPresented: $resettingFavoritesAlert) {
-                Alert(title: Text("All favorites will be removed"), message: Text("This cannot be undone!"), primaryButton: .destructive(Text("Reset")) {
-                    self.resetFavorites()
-                    }, secondaryButton: .cancel())
-            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
-    }
-    
-    func resetFavorites() {
-        self.favorites.removeAll()
     }
 }
 
