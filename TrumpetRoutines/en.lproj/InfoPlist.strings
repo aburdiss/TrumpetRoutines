@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  TrumpetRoutines
+
+  Created by Alexander Burdiss on 9/5/20.
+  Copyright © 2020 Alex Burdiss. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Tpt Routines";
+"CFBundleName" = "Trumpet Routines";

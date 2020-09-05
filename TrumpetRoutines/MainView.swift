@@ -8,7 +8,13 @@
 
 import SwiftUI
 
+/**
+The initial view of the app that contains the button to begin the routine
+*/
 struct MainView: View {
+    /**
+     The user interface
+     */
     var body: some View {
         NavigationView() {
             VStack {
@@ -22,8 +28,10 @@ struct MainView: View {
                             .font(.title)
                     }
                     .padding()
-                    .overlay(RoundedRectangle(cornerRadius: 12)
-                        .stroke(Color.yellow, lineWidth: 2))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                        .stroke(Color.yellow, lineWidth: 2)
+                    )
                     .padding()
                 }
             }

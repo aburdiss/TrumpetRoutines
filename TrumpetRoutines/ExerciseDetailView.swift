@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ExerciseDetailView: View {
+    /**
+     The user selected favorites
+     */
     @EnvironmentObject var favorites: Favorites
+    
+    /**
+     The image name to display
+     */
     var image: String
+    
+    /**
+     The user interface
+     */
     var body: some View {
         VStack{
             Image(self.image)

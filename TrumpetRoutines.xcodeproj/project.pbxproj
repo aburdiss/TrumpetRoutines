@@ -21,6 +21,7 @@
 		9C503287246E05E000982106 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503286246E05E000982106 /* ExerciseDetailView.swift */; };
 		9C503289246E05FF00982106 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C503288246E05FF00982106 /* SettingsView.swift */; };
 		9C50328B246E061A00982106 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C50328A246E061A00982106 /* Model.swift */; };
+		DD0EE4F02503DDB800505FBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD0EE4F22503DDB800505FBD /* InfoPlist.strings */; };
 		DD88A0E12500374600978B84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD88A0E32500374600978B84 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,10 @@
 		9C503286246E05E000982106 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		9C503288246E05FF00982106 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9C50328A246E061A00982106 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DD0EE4F12503DDB800505FBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0EE4F32503DDB900505FBD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DD0EE4F42503DDBA00505FBD /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD0EE4F52503DDBB00505FBD /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		DD88A0E22500374600978B84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DD88A0E42500375400978B84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD88A0E52500375B00978B84 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 				9C50325B246DF32200982106 /* LaunchScreen.storyboard */,
 				9C50325E246DF32200982106 /* Info.plist */,
 				9C503258246DF32200982106 /* Preview Content */,
+				DD0EE4F22503DDB800505FBD /* InfoPlist.strings */,
 			);
 			path = TrumpetRoutines;
 			sourceTree = "<group>";
@@ -271,6 +277,7 @@
 				DD88A0E12500374600978B84 /* Localizable.strings in Resources */,
 				9C50325A246DF32200982106 /* Preview Assets.xcassets in Resources */,
 				9C503257246DF32200982106 /* Assets.xcassets in Resources */,
+				DD0EE4F02503DDB800505FBD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,17 @@
 				9C50325C246DF32200982106 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD0EE4F22503DDB800505FBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD0EE4F12503DDB800505FBD /* en */,
+				DD0EE4F32503DDB900505FBD /* zh-Hans */,
+				DD0EE4F42503DDBA00505FBD /* fr */,
+				DD0EE4F52503DDBB00505FBD /* es-419 */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		DD88A0E32500374600978B84 /* Localizable.strings */ = {
@@ -482,7 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -491,7 +509,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -504,7 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.2.0;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -513,7 +531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -8,6 +8,9 @@
 
 import SwiftUI
 
+/**
+Allows the user to taylor the routine to their needs. Resources and other options displayed in this view.
+*/
 struct SettingsView: View {
     /**
      The user selected preferences.
