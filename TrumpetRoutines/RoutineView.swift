@@ -58,9 +58,7 @@ struct RoutineView: View {
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitle(
-            Text("\(self.thisExercise + 1)/\(self.routine.count)")
-                .font(.headline)
-            , displayMode: .inline)
+            Text("\(self.thisExercise + 1)/\(self.routine.count)"), displayMode: .inline)
         .navigationBarItems(leading: Button(action: {
             self.getPreviousExercise()
         }) {
