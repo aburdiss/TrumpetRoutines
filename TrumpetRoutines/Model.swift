@@ -56,7 +56,7 @@ let allExercises: [String] = longTones + slowLipSlurs + fastLipSlurs + staticArt
 /**
  The logic responsible for setting and retirieving user defined settings in local memory. Settings persist between app termination and launch.
  */
-class settingsModel: ObservableObject {
+class Settings: ObservableObject {
     /**
      The different difficulty names to be shown on the difficulty selection picker.
      */

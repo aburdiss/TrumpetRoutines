@@ -9,7 +9,7 @@
 import SwiftUI
 
 /**
-The list of all exercises in the app. When clicked, ExerciseDetailView will open and display the exercise. Each exercise must be referred to statically because Swift has problems using Dynamically Generated content the destination of a NavigationLink. This may be updated in future versions of Swift
+The list of all exercises in the app. When clicked, ExerciseDetailView will open and display the exercise.
 */
 struct ListView: View {
     /**

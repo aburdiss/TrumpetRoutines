@@ -38,7 +38,7 @@ struct ContentView: View {
                     Text("Settings")
             }
         }
-        .environmentObject(settingsModel())
+        .environmentObject(Settings())
         .environmentObject(Favorites())
         .environmentObject(CustomRoutines())
         .animation(.none)

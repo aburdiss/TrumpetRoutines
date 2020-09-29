@@ -15,7 +15,7 @@ struct SettingsView: View {
     /**
      The user selected preferences.
      */
-    @EnvironmentObject var settings: settingsModel
+    @EnvironmentObject var settings: Settings
     
     /**
      The user selected Favorites
@@ -195,6 +195,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView().environmentObject(settingsModel())
+        SettingsView().environmentObject(Settings())
     }
 }
