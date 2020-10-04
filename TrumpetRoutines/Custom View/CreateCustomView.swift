@@ -195,6 +195,7 @@ struct CreateCustomView: View {
                         self.pickerExerciseIsPresented.toggle()
                     }) {
                         Text("Preview")
+                            .padding(.trailing)
                             .sheet(isPresented: self.$pickerExerciseIsPresented) {
                                 CustomPreviewView(image: allExercises[self.selectedExercise], isPresented: self.$pickerExerciseIsPresented)
                                     .environmentObject(self.favorites)
