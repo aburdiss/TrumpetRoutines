@@ -78,6 +78,8 @@
 		DD88A0E42500375400978B84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD88A0E52500375B00978B84 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DD88A0E62500376400978B84 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDACEE26255A3F960045125D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DDACEE27255A3F960045125D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDDE36962517A8B900F2494C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		DDDE36A12517A8E700F2494C /* CustomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListView.swift; sourceTree = "<group>"; };
 		DDDE36A62517A8EE00F2494C /* CustomRoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoutineView.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				"zh-Hans",
 				"es-419",
 				fr,
+				ja,
 			);
 			mainGroup = 9C503244246DF32000982106;
 			productRefGroup = 9C50324E246DF32000982106 /* Products */;
@@ -413,6 +416,7 @@
 				DD0EE4F32503DDB900505FBD /* zh-Hans */,
 				DD0EE4F42503DDBA00505FBD /* fr */,
 				DD0EE4F52503DDBB00505FBD /* es-419 */,
+				DDACEE27255A3F960045125D /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -424,6 +428,7 @@
 				DD88A0E42500375400978B84 /* zh-Hans */,
 				DD88A0E52500375B00978B84 /* es-419 */,
 				DD88A0E62500376400978B84 /* fr */,
+				DDACEE26255A3F960045125D /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -554,7 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -563,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -576,7 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"TrumpetRoutines/Preview Content\"";
 				DEVELOPMENT_TEAM = L4SN53B3F6;
 				ENABLE_PREVIEWS = YES;
@@ -585,7 +590,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderBurdiss.TrumpetRoutines;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
